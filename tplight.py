@@ -429,6 +429,11 @@ class LB130(object):
         except:
             raise RuntimeError("Error connecting to bulb")
 
+
+    def update(self, msg):
+        self.__update(msg)
+
+
     def __fetch_data(self, message):
         '''
         Fetch data from the device
